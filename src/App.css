@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --black:rgb(36, 36, 36);
+  --font-one:'Crimson Pro', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  margin: 1vw auto;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.237);
+  padding: 1vw;
+  position: sticky;
+  top: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-image{
+  width: 10vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info p{
+  font-size: 1.6vw;
+  font-family: var(--font-one);
+  margin: 1vw auto;
+  text-align: right;
+}
+
+.navigation-div{
+  border: 1px solid gray;
+  text-align: center;
+  padding: 1.54vw;
+}
+
+.navigation-div a{
+  color: gray;
+  margin: 1vw 3vw;
+  font-size: 2vw;
+  text-decoration: none;
 }
